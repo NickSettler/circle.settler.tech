@@ -1,0 +1,17 @@
+$gridTypes: (
+    default: (
+        rows: auto,
+        columns: 2fr 8fr 2fr
+    )
+);
+
+@mixin grid($type: default) {
+    @if (map_has_key($gridTypes, $type) == false) {
+        @error "No such grid type";
+    }
+
+    $grid: map_get($gridTypes, $type);
+    
+    grid-template-rows: map_get($grid, rows);
+    grid-template-columns: map_get($grid, columns);
+}

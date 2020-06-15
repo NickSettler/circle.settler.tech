@@ -1,0 +1,13 @@
+.main-page {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    position: relative;
+
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+
+    align-content: flex-start;
+}

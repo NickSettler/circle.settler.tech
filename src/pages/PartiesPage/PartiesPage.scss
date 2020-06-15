@@ -1,0 +1,7 @@
+@import "src/libs/libs";
+
+.parties-page{
+    @extend %grid;
+    max-width: 1200px;
+    @include grid();
+}

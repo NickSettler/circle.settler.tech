@@ -1,0 +1,15 @@
+%default{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+%grid{
+    @extend %default;
+    display: grid;
+}
+
+%flex{
+    @extend %default;
+    display: flex;
+}
