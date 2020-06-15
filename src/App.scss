@@ -1,0 +1,25 @@
+.app {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+}
+
+.header {
+    $radius: 4px;
+
+    width: 100%;
+    min-height: 48px;
+    height: auto;
+    display: flex;
+    position: relative;
+
+    justify-content: space-between;
+
+    border-radius: 0 0 $radius $radius;
+
+    background: #6ce8d1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04), 0 1px 8px rgba(0, 0, 0, 0.04);
+}
